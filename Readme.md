@@ -1,6 +1,8 @@
 # ScrollBar
 
-A Mac Appstore like scroller component written with UIKit. Feel free to fork the project and adapt it to your needs. There are still a couple of rough edges in the project.
+A Mac Appstore like scroller component written with UIKit. Feel free to fork the project and adapt it to your needs. There are still a couple of rough edges in the project. All relevant source files can be found in the `ScrollbarView` subfolder. A simple example can be found in the `ViewController.swift` file.
+
+Pull requests are always welcome ! 
 
 ### Screenshots
 
@@ -44,6 +46,10 @@ imageScroller.itemSizingBehaviour = .dynamic(2)
 imageScroller.snappingStepSize = 2
 imageScroller.isScrollEnabled = true
 ```
+
+##### Custom 
+
+You can create your own content by creating a subclass of `ScrollbarViewItem`. Take a look at `ScrollbarViewImageItem` and `ScrollbarViewTextItem` for an example of how the subclass should look like. 
 
 ##### ScrollbarViewDataSource
 
